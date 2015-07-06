@@ -62,27 +62,27 @@ public class ShowCurrentLocation extends FragmentActivity implements GooglePlayS
 		OnMarkerDragListener
 {
 
-	private ProgressBar					    searching;
-	CustomAutoCompleteTextView			myTextView;
-	private LocationClient				  mLocationClient;
-	private GoogleMap					      googleMap;
+	private ProgressBar				 searching;
+	CustomAutoCompleteTextView			 myTextView;
+	private LocationClient				 mLocationClient;
+	private GoogleMap				 googleMap;
 
-	private Double						      latitude	= 0d, longitude = 0d;
-	private Button					      	saveLocationButton, viewSavedLocations;
+	private Double					 latitude= 0d, longitude = 0d;
+	private Button					 saveLocationButton, viewSavedLocations;
 
-	LatLng								          searchposition;
+	LatLng						 searchposition;
 
-	private DrawerLayout				    drawerlayout;
-	private ListView				      	drawerlist;
-	private ActionBarDrawerToggle		drawertoggle;
+	private DrawerLayout				 drawerlayout;
+	private ListView				 drawerlist;
+	private ActionBarDrawerToggle		         drawertoggle;
 
 	// slide menu items
-	private String[]					      navMenuTitles;
-	private TypedArray				      navMenuIcons;
+	private String[]				 navMenuTitles;
+	private TypedArray				 navMenuIcons;
 
-	private ArrayList<NavDrawerItem>	navDrawerItems;
-	private NavDrawerListAdapter		adapter;
-	LocationManager						      lm;
+	private ArrayList<NavDrawerItem>	         navDrawerItems;
+	private NavDrawerListAdapter		         adapter;
+	LocationManager					 lm;
 	int status;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
